@@ -66,9 +66,11 @@ arepas_menu = Menu('Take a’ Arepa', {'arepa pabellon': 7.00, 'pernil arepa': 8
 # Create Franchises
 flagship_store = Franchise('1232 West End Road', [brunch, early_bird, dinner, kids])
 new_installment = Franchise('12 East Mulberry', [brunch, early_bird, dinner, kids])
+arepas_place = Franchise('189 Fitzgerald Avenue', [arepas_menu])
 
 # Create Businesses
 business = Business('Basta Fazoolin\' with my Heart', [flagship_store, new_installment])
+new_business = Business('Take a\' Arepa', [arepas_place])
 
 # Test if printing Menu.__repr__ will return string '{menu} menu available from {start_time} to {end_time}'
 # print(brunch)
@@ -78,4 +80,5 @@ business = Business('Basta Fazoolin\' with my Heart', [flagship_store, new_insta
 # print(early_bird.calculate_bill(['salumeria plate', 'mushroom ravioli (vegan)']))
 
 # Test what menu items are available at certain times
-print(flagship_store.available_menus('12pm'))
+# print(flagship_store.available_menus('12pm'))
+
